@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6347">
+
+
+
+    <TextView
+        android:id="@+id/Heading1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="#FF0000"
+        android:text="Food Panda"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="408dp"
+        android:layout_marginTop="100dp"
+        android:onClick="showImg"
+        android:text="A steak is a meat generally sliced across the muscle fibers, potentially including a bone. It is normally grilled, though can also be 		pan-fried. It is often grilled in an attempt to replicate the flavor of steak cooked over the glowing coals of an open fire"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="408dp"
+        android:layout_marginTop="100dp"
+        android:onClick="detailOfDish"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:src="@drawable/steak" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="550dp"
+        android:backgroundTint="#8B0000"
+        android:onClick="prevDish"
+        android:text="Previous" />
+    <Button
+        android:id="@+id/next"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="550dp"
+        android:backgroundTint="#8B0000"
+        android:onClick="nextDish"
+        android:text="Next" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="455dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="description"
+        android:textColor="@color/black"
+        android:text="Recipe Menu" />
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="38dp" />
+
+</FrameLayout>
